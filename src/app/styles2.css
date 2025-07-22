@@ -1,0 +1,1587 @@
+@import url("/fonts/inter/stylesheet.css");
+@import url("/fonts/source-sans-3/stylesheet.css");
+@import url("/fonts/ttnorms/stylesheet.css");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: TT Norms;
+  font-feature-settings: none;
+  font-variant-ligatures: none;
+}
+body,
+html {
+  max-width: 100vw;
+  height: 100dvh;
+  overflow-x: hidden;
+  background-color: #090f1e;
+}
+body {
+  position: relative;
+}
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: #090f1e;
+}
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  background-color: #4383ff;
+}
+@container (width < 1062px) {
+}
+@container (width < 1200px) {
+}
+@container (width < 794px) {
+}
+@container (width < 1150px) {
+}
+.Button_main__CtQhw {
+  height: 60px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(90deg, #4e95ff, #376fff);
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+  color: #fff;
+}
+.Button_main__CtQhw:hover {
+  opacity: 0.7;
+}
+.Button_secondary__egtBn {
+  background: transparent;
+}
+.Button_main__CtQhw > svg {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+}
+.Header_main__SDeVa {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  min-height: 100px;
+  padding: 0 32px;
+  background: linear-gradient(180deg, #0d1529, #090f1e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header_content__YVS3W {
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.06);
+}
+.Header_logo__h1sXA {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  margin-right: 24px;
+}
+.Header_logo__h1sXA > span {
+  font-family: TT Norms ExtraBold;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+}
+.Header_buttons__8Vn4J {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Header_giftButton__OPCXW {
+  position: relative;
+  margin-right: 5px;
+  width: 170px;
+  min-width: 170px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #121a2e;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.Header_giftButton__OPCXW:hover {
+  opacity: 0.7;
+}
+.Header_circle__AkhUQ {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #fefe75, #fed630);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 9px;
+}
+.Header_circle__AkhUQ > img {
+  pointer-events: none;
+  position: absolute;
+  width: 56px;
+}
+.Header_giftText__mv_Ds {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Header_giftText__mv_Ds > span {
+  font-family: TT Norms Bold;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.Header_yellow__DbrGs {
+  font-family: TT Norms ExtraBold !important;
+  font-style: italic;
+  background: linear-gradient(135deg, #fefe75, #fed630);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.Header_arrow__Zx5oB {
+  position: absolute;
+  right: 13px;
+}
+.Header_navBut__8voV0 {
+  height: 50px !important;
+  padding: 10px !important;
+}
+.Header_navBut__8voV0 > span {
+  position: relative;
+  font-size: 16px;
+}
+.Header_navButs__TtBvc {
+  display: flex;
+}
+.Header_line__pdnE7 {
+  position: absolute;
+  top: 24px;
+  width: 100%;
+  height: 2px;
+  background: #4383ff;
+  box-shadow: 0 1px 6px rgba(67, 131, 255, 0.5);
+  border-radius: 1000px;
+  pointer-events: none;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+.Header_line__pdnE7.Header_active__C_hPE {
+  opacity: 1;
+}
+@media screen and (max-width: 1300px) {
+  .Header_logo__h1sXA > span {
+    display: none;
+  }
+  .Header_buttons__8Vn4J {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .Header_navButs__TtBvc {
+    display: none;
+  }
+}
+@media screen and (max-width: 799px) {
+  .Header_main__SDeVa {
+    padding: 0 10px;
+    height: 60px;
+    min-height: 60px;
+  }
+  .Header_content__YVS3W {
+    height: 60px;
+  }
+  .Header_logo__h1sXA {
+    display: block !important;
+    margin: 0;
+  }
+  .Header_logo__h1sXA,
+  .Header_logo__h1sXA > svg {
+    width: 40px;
+    height: 40px;
+  }
+  .Header_giftButton__OPCXW {
+    display: none;
+  }
+}
+.UserNotifications_notifBut__pxfSO {
+  background: linear-gradient(1turn, #0d1529, #090f1e) !important;
+  border: 1px solid hsla(0, 0%, 100%, 0.06) !important;
+  width: 50px;
+  height: 50px;
+}
+.UserNotifications_notifBut__pxfSO > svg > path {
+  fill: #404b66;
+}
+.UserNotifications_main__A7e0t {
+  position: relative;
+}
+.UserNotifications_dropdown__mxuD8 {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 340px;
+  background: #090f1e;
+  border: 1px solid #181d2b;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 20px 20px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    all 0.3s,
+    pointer-events 0s;
+  -webkit-transform: translateZ(0);
+  z-index: 1000;
+}
+.UserNotifications_head__wK51k {
+  width: calc(100% - 10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.UserNotifications_left___666o {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.UserNotifications_left___666o > span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+.UserNotifications_cross__0V_Yl {
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.UserNotifications_cross__0V_Yl:hover {
+  opacity: 0.6;
+}
+.UserNotifications_head__wK51k > span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5f6889;
+}
+.UserNotifications_white__dRWM_ {
+  color: #fff !important;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.UserNotifications_white__dRWM_:hover {
+  color: #5f6889 !important;
+}
+.UserNotifications_notifs__wREK8 {
+  width: 100%;
+  max-height: 270px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+.UserNotifications_notifs__wREK8::-webkit-scrollbar {
+  border-radius: 2px;
+  background-color: #181d2b;
+}
+.UserNotifications_notifs__wREK8::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+}
+.UserNotifications_notif__N3JQI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.UserNotifications_notifLeft__6fPX_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  min-width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c1324;
+}
+.UserNotifications_notifLeft__6fPX_ > svg > path {
+  fill: #4384ff;
+}
+.UserNotifications_notifBody__yARPa {
+  position: relative;
+  width: 100%;
+  padding: 20px 20px 20px 60px;
+  background-color: #0d1529;
+}
+.UserNotifications_title__96HkD {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.UserNotifications_desc__WUlYL,
+.UserNotifications_title__96HkD {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  word-break: break-word;
+}
+.UserNotifications_desc__WUlYL {
+  color: #5f6889;
+}
+.UserNotifications_end__GPbUm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.UserNotifications_end__GPbUm > span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(95, 104, 137, 0.3);
+}
+@media screen and (max-width: 799px) {
+  .UserNotifications_notifBut__pxfSO {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .UserNotifications_dropdown__mxuD8 {
+    top: 60px;
+    width: calc(100vw - 20px);
+  }
+}
+.FullGames_input__3RgZB:has(+ .FullGames_inpButs__a9al5) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.FullGames_dollar__JE4f6:has(~ .FullGames_inpButs__a9al5) {
+  right: 117px;
+}
+@media screen and (max-width: 799px) {
+  .FullGames_dollar__JE4f6:has(~ .FullGames_inpButs__a9al5) {
+    right: 105px;
+  }
+}
+.MobileMenu_main__wePxv {
+  position: fixed;
+  top: 0;
+  left: -101vw;
+  width: 100vw;
+  height: 100dvh;
+  transition-duration: 0.3s;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 16px 75px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(90deg, #0d1529, #090f1e);
+  scrollbar-width: none;
+}
+.MobileMenu_main__wePxv::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+.MobileMenu_tB__HtoAr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.MobileMenu_tBIn__7jlS_ {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 12px;
+  background-color: #111a33;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.MobileMenu_tBIn__7jlS_:hover {
+  background: #152447;
+}
+.MobileMenu_subtitle__O1rJ9 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: hsla(0, 0%, 100%, 0.3);
+  margin-bottom: 16px;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+.MobileMenu_navs2__HLAlZ {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(270deg, #0d1426 60%, #111a33);
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.MobileMenu_navs2__HLAlZ:last-child {
+  margin-bottom: 0;
+}
+.MobileMenu_nav2__B8Cqe {
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  gap: 10px;
+}
+.MobileMenu_nav2__B8Cqe > span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  white-space: nowrap;
+}
+.MobileMenu_nav2__B8Cqe:hover {
+  background-color: hsla(0, 0%, 100%, 0.04);
+}
+.MobileMenu_nav2__B8Cqe > svg > path {
+  transition-duration: 0.3s;
+}
+.MobileMenu_nav2__B8Cqe:hover > svg > path {
+  fill: #fff;
+}
+.Side_withSide__fJPEf {
+  display: flex;
+  width: 100%;
+  min-height: 100dvh;
+  max-height: 100dvh;
+}
+.Side_withSideOver__MuCMe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.Side_main__l9CWM {
+  position: relative;
+  width: 100px;
+  min-width: 100px;
+  height: 100dvh;
+  transition-duration: 0.3s;
+}
+.Side_main__l9CWM.Side_open__Xj_xr {
+  width: 420px;
+  min-width: 420px;
+}
+.Side_content__uEToY {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100dvh;
+  border-right: 1px solid hsla(0, 0%, 100%, 0.05);
+  background: linear-gradient(90deg, #0d1529, #090f1e);
+  transition-duration: 0.3s;
+}
+.Side_main__l9CWM.Side_open__Xj_xr > .Side_content__uEToY {
+  width: 420px;
+}
+.Side_head__jByBG {
+  position: relative;
+  height: 100px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.05);
+  padding-left: 25px;
+}
+.Side_head__jByBG,
+.Side_logo__79dVV {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.Side_logo__79dVV {
+  gap: 14px;
+  cursor: pointer;
+  max-width: 100%;
+  overflow: hidden;
+}
+.Side_logo__79dVV > span {
+  font-family: TT Norms Black;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 0.3s;
+}
+.Side_main__l9CWM.Side_open__Xj_xr .Side_logo__79dVV > span {
+  opacity: 1;
+  visibility: visible;
+}
+.Side_switcher__nNpXA {
+  position: absolute;
+  bottom: -19px;
+  right: -19px;
+  width: 39px;
+  height: 39px;
+  background: linear-gradient(90deg, #18233e, #090f1e);
+  border: 1px solid #192235;
+  border-radius: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  z-index: 100;
+}
+.Side_switcher__nNpXA > svg:not(.Side_arrow__AYWxL) {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  height: 40px;
+  filter: drop-shadow(0 1px 6px rgba(67, 131, 255, 0.5));
+}
+.Side_arrow__AYWxL,
+.Side_body__vvtlr {
+  transition-duration: 0.3s;
+}
+.Side_body__vvtlr {
+  height: 100%;
+  max-height: calc(100% - 100px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 16px;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+.Side_body__vvtlr::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+.Side_main__l9CWM.Side_open__Xj_xr .Side_body__vvtlr {
+  padding: 25px;
+}
+.Side_subtitle__gtdWT {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: hsla(0, 0%, 100%, 0.3);
+  margin-bottom: 10px;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+.Side_tB__yKNw5 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.Side_tBIn__UOV6R {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 12px;
+  background-color: #111a33;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.Side_tBIn__UOV6R:hover {
+  background: #152447;
+}
+.Side_navs2__HEgyQ {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(270deg, #0d1426 60%, #111a33);
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+.Side_navs2__HEgyQ:last-child {
+  margin-bottom: 0;
+}
+.Side_nav2__Leo_N {
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  gap: 10px;
+}
+.Side_nav2__Leo_N > span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  white-space: nowrap;
+}
+.Side_nav2__Leo_N:hover {
+  background-color: hsla(0, 0%, 100%, 0.04);
+}
+@media screen and (max-width: 1440px) {
+  .Side_subGames__O81Hj {
+    margin-left: 7px;
+  }
+  .Side_arrow__AYWxL {
+    transform: rotate(180deg);
+  }
+  .Side_main__l9CWM {
+    min-width: 100px !important;
+  }
+  .Side_content__uEToY,
+  .Side_main__l9CWM {
+    width: 100px !important;
+  }
+  .Side_logo__79dVV > span {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+  .Side_body__vvtlr {
+    padding: 25px 16px !important;
+  }
+  .Side_switcher__nNpXA {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .Side_tB__yKNw5 {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .Side_tBIn__UOV6R {
+    width: 72px;
+    margin-left: -3px;
+    flex-direction: column;
+    gap: 0;
+    font-size: 14px;
+  }
+  .Side_nav2__Leo_N > span,
+  .Side_subtitle__gtdWT {
+    display: none;
+  }
+  .Side_nav2__Leo_N {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 799px) {
+  .Side_main__l9CWM {
+    display: none;
+  }
+}
+.Tooltip_main__ImyZd {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  transition-duration: 0.3s;
+  z-index: 100;
+}
+.Tooltip_main__ImyZd > span {
+  margin-left: -1px;
+  padding: 0 12px;
+  height: 32px;
+  background: #4384ff;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.Tooltip_main__ImyZd > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserBlock_main__hd8EG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.UserBlock_userPfp__R3TM7 {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+.UserBlock_userPfp__R3TM7.UserBlock_visible__ySocR {
+  display: block;
+}
+.UserBlock_circle__qAisM {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(180deg, #0d1529, #141c30);
+  border: 2px solid #4383ff;
+  border-radius: 50px;
+}
+.UserBlock_arrowBtn__oNpd7,
+.UserBlock_circle__qAisM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UserBlock_arrowBtn__oNpd7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  background: #4383ff;
+  border-radius: 12px;
+  transition-duration: 0.3s;
+}
+.UserBlock_userPfp__R3TM7:hover > .UserBlock_arrowBtn__oNpd7 {
+  background: #2c62c9;
+}
+.UserBlock_stats__UH4zJ {
+  margin-left: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.UserBlock_text__ouHuk {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.25);
+}
+.UserBlock_balance__dBBfG {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+}
+.UserBlock_balance__dBBfG > span {
+  opacity: 0.25;
+}
+.UserBlock_deposit__7padV {
+  background: linear-gradient(90deg, #2cb966, #089e4e) !important;
+}
+@media screen and (max-width: 1120px) {
+  .UserBlock_user__x7gZf .UserBlock_deposit__7padV {
+    width: 50px;
+  }
+  .UserBlock_user__x7gZf .UserBlock_deposit__7padV span {
+    display: none;
+  }
+}
+@media screen and (max-width: 799px) {
+  .UserBlock_main__hd8EG {
+    gap: 10px;
+  }
+  .UserBlock_main__hd8EG button {
+    height: 40px !important;
+    padding: 0 20px;
+    font-size: 12px;
+    gap: 4px;
+    border-radius: 10px;
+  }
+  .UserBlock_main__hd8EG button svg {
+    width: 14px;
+    min-width: 14px;
+    height: 14px;
+  }
+  .UserBlock_deposit__7padV {
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 0 0 2px !important;
+  }
+  .UserBlock_text__ouHuk {
+    font-size: 10px;
+    line-height: normal;
+  }
+  .UserBlock_balance__dBBfG {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .UserBlock_stats__UH4zJ {
+    gap: 3px;
+  }
+  .UserBlock_userPfp__R3TM7 {
+    margin-right: -2px;
+  }
+  .UserBlock_circle__qAisM {
+    width: 35px;
+    height: 35px;
+  }
+  .UserBlock_circle__qAisM > svg {
+    width: 12px;
+  }
+  .UserBlock_arrowBtn__oNpd7 {
+    width: 13px;
+    height: 13px;
+  }
+  .UserBlock_arrowBtn__oNpd7 > svg {
+    width: 4px;
+    margin-left: 1px;
+  }
+}
+@keyframes liveChat_wiggle__XTibP {
+  5% {
+    transform: rotate(-3deg);
+  }
+  2%,
+  8% {
+    transform: rotate(3deg);
+  }
+  10%,
+  to {
+    transform: rotate(0deg);
+  }
+}
+.liveChat_main__06_VH {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transform: translateZ(0);
+  z-index: 1000;
+  pointer-events: none;
+}
+.liveChat_circle__S8bvP,
+.liveChat_main__06_VH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liveChat_circle__S8bvP {
+  pointer-events: auto;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+  background: linear-gradient(90deg, #4e95ff, #376fff);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.liveChat_circle__S8bvP:hover {
+  transform: scale(1.05);
+}
+.liveChat_circle__S8bvP:active {
+  transition-duration: 0.1s;
+  transform: scale(0.95);
+}
+.liveChat_imgIn___oMkJ {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition-duration: 0.3s;
+}
+.liveChat_imgIn___oMkJ.liveChat_active__PJwGv {
+  opacity: 1;
+  transform: scale(1);
+}
+.liveChat_tab__UU4cn {
+  width: 90px;
+  height: 25px;
+  margin-right: 15px;
+  background: linear-gradient(90deg, #4e95ff, #376fff);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: liveChat_wiggle__XTibP 8s 6s infinite running;
+  transition-duration: 0.3s;
+  cursor: default;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.liveChat_overBlockOver__vVBBw {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.liveChat_overBlockOver__vVBBw {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transform: translateZ(0);
+  z-index: 1010;
+  transition:
+    all 0.3s,
+    pointer-events 0s;
+}
+.liveChat_blockOver__Nc0sc {
+  position: relative;
+}
+.liveChat_block__DGKPr {
+  width: 400px;
+  height: 585px;
+  background-color: #e2eaff;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.liveChat_top__p_AEd {
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(90deg, #4e95ff, #376fff);
+}
+.liveChat_topIn__V38Uc {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px 25px 25px;
+}
+.liveChat_topLeft__msq_B {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.liveChat_topTitle__VMORQ {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  max-width: 135px;
+}
+.liveChat_overInput__sYxkX {
+  width: 100%;
+  height: 50px;
+  border: 2px solid rgba(9, 15, 30, 0.12);
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 7px 7px 20px;
+  gap: 10px;
+  transition-duration: 0.3s;
+}
+.liveChat_bottom___dKA0 {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #e0e9ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+.liveChat_fileButton__Ptfvu {
+  display: flex;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.liveChat_fileButton__Ptfvu > svg > path {
+  transition-duration: 0.3s;
+}
+.liveChat_fileButton__Ptfvu:hover > svg > path {
+  fill: #4383ff;
+}
+.liveChat_sendButton__GhvKx {
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  border-radius: 40px;
+  background: #4383ff;
+  outline: none;
+  border: 1px solid #4383ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.liveChat_avatars__x8eBs {
+  height: 44px;
+}
+.liveChat_sendButton__GhvKx > svg > path {
+  transition-duration: 0.3s;
+  fill: #fff;
+}
+.liveChat_sendButton__GhvKx:hover {
+  opacity: 0.9;
+}
+.liveChat_sendButton__GhvKx:hover > svg > path {
+  fill: #fff;
+}
+.liveChat_sendButton__GhvKx:disabled {
+  background: rgba(9, 15, 30, 0.12);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+.liveChat_sendButton__GhvKx:disabled > svg > path {
+  fill: #777f90;
+}
+.liveChat_input__SpC1t {
+  width: 100%;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #090f1e;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.liveChat_messages__VMGEY {
+  height: calc(100% - 170px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+}
+.liveChat_messages__VMGEY::-webkit-scrollbar {
+  background-color: #e2eaff;
+}
+.liveChat_message__NWRRw {
+  display: flex;
+  gap: 10px;
+}
+.liveChat_messageOver__DpX_v {
+  width: calc(100% - 40px);
+}
+.liveChat_avatar__QU_yO {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  background-color: #4383ff;
+  background-size: cover;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liveChat_def__4MOxM {
+  background-image: url(/new/chat/bot.webp);
+}
+.liveChat_msg__MIVDo {
+  max-width: 100%;
+  width: max-content;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: rgba(55, 111, 255, 0.12);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #090f1e;
+  word-break: break-word;
+  margin-bottom: 4px;
+}
+.liveChat_time__CrV86 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(9, 16, 30, 0.45);
+  text-align: left;
+}
+.liveChat_unread__6H_9b {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  background: linear-gradient(270deg, #ff3f61, #ff123d);
+  border: 4px solid #090f1e;
+  top: -6px;
+  right: -6px;
+  transition-duration: 0.3s;
+  transform: scale(0);
+  opacity: 0;
+}
+.liveChat_cross__wGabt {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.liveChat_cross__wGabt:hover {
+  background-color: rgba(9, 14, 30, 0.15);
+}
+.liveChat_cross__wGabt > svg {
+  transition-duration: 0.3s;
+}
+.liveChat_cross__wGabt:active > svg {
+  transform: scale(0.8);
+}
+@media screen and (max-width: 799px) {
+  .liveChat_main__06_VH,
+  .liveChat_overBlockOver__vVBBw {
+    bottom: 75px;
+    right: 10px;
+  }
+  .liveChat_circle__S8bvP {
+    width: 50px;
+    height: 50px;
+  }
+  .liveChat_imgIn___oMkJ {
+    width: 30px;
+    height: 30px;
+  }
+  .liveChat_tab__UU4cn {
+    display: none;
+  }
+}
+@media screen and (max-height: 720px),
+  screen and (max-width: 1060px) and (max-height: 820px),
+  screen and (max-width: 799px) {
+  .liveChat_overBlockOver__vVBBw {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100dvh;
+    -webkit-transform: translateZ(0);
+    z-index: 1010;
+  }
+  .liveChat_block__DGKPr {
+    border-radius: 0;
+    width: 100%;
+    height: 100dvh;
+  }
+}
+span:has(.profile_dot__Gazvv) {
+  display: flex;
+}
+@media screen and (max-width: 799px) {
+  span:has(.profile_dot__Gazvv) {
+    margin: 5px 0;
+    align-items: center;
+  }
+}
+
+/* inter-100 - cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  src:
+    url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-100.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-100.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-200 - cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  src:
+    url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-200.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-200.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-300 - cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-300.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-300.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-regular - cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-regular.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-regular.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-500 - cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-500.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-500.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-600 - cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-600.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-600.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-700 - cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-700.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-700.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-800 - cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src:
+    url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-800.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-800.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-900 - cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src:
+    url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-900.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/inter/inter-v18-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-900.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 900;
+  src:
+    url("/fonts/source-sans-3/source-sans-3-v15-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-900.woff2")
+      format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url("/fonts/source-sans-3/source-sans-3-v15-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext_vietnamese-900.ttf")
+      format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* This stylesheet generated by Transfonter (https://transfonter.org) on December 7, 2017 5:54 PM */
+
+@font-face {
+  font-family: "TT Norms ExtraBold";
+  src: url("TTNorms-ExtraBoldItalic.eot");
+  src:
+    local("TT Norms ExtraBold Italic"),
+    local("TTNorms-ExtraBoldItalic"),
+    url("TTNorms-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-ExtraBoldItalic.woff") format("woff"),
+    url("TTNorms-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Bold.eot");
+  src:
+    local("TT Norms Bold"),
+    local("TTNorms-Bold"),
+    url("TTNorms-Bold.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Bold.woff") format("woff"),
+    url("TTNorms-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Thin.eot");
+  src:
+    local("TT Norms Thin"),
+    local("TTNorms-Thin"),
+    url("TTNorms-Thin.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Thin.woff") format("woff"),
+    url("TTNorms-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Regular.eot");
+  src:
+    local("TT Norms Regular"),
+    local("TTNorms-Regular"),
+    url("TTNorms-Regular.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Regular.woff") format("woff"),
+    url("TTNorms-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Thin";
+  src: url("TTNorms-ThinItalic.eot");
+  src:
+    local("TT Norms Thin Italic"),
+    local("TTNorms-ThinItalic"),
+    url("TTNorms-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-ThinItalic.woff") format("woff"),
+    url("TTNorms-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Italic.eot");
+  src:
+    local("TT Norms Italic"),
+    local("TTNorms-Italic"),
+    url("TTNorms-Italic.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Italic.woff") format("woff"),
+    url("TTNorms-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Heavy.eot");
+  src:
+    local("TT Norms Heavy"),
+    local("TTNorms-Heavy"),
+    url("TTNorms-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Heavy.woff") format("woff"),
+    url("TTNorms-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Light.eot");
+  src:
+    local("TT Norms Light"),
+    local("TTNorms-Light"),
+    url("TTNorms-Light.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Light.woff") format("woff"),
+    url("TTNorms-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Black";
+  src: url("TTNorms-BlackItalic.eot");
+  src:
+    local("TT Norms Black Italic"),
+    local("TTNorms-BlackItalic"),
+    url("TTNorms-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-BlackItalic.woff") format("woff"),
+    url("TTNorms-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-ExtraLight.eot");
+  src:
+    local("TT Norms ExtraLight"),
+    local("TTNorms-ExtraLight"),
+    url("TTNorms-ExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-ExtraLight.woff") format("woff"),
+    url("TTNorms-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Light";
+  src: url("TTNorms-LightItalic.eot");
+  src:
+    local("TT Norms Light Italic"),
+    local("TTNorms-LightItalic"),
+    url("TTNorms-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-LightItalic.woff") format("woff"),
+    url("TTNorms-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT Norms ExtraLight";
+  src: url("TTNorms-ExtraLightItalic.eot");
+  src:
+    local("TT Norms ExtraLight Italic"),
+    local("TTNorms-ExtraLightItalic"),
+    url("TTNorms-ExtraLightItalic.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-ExtraLightItalic.woff") format("woff"),
+    url("TTNorms-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT Norms Bold";
+  src: url("TTNorms-BoldItalic.eot");
+  src:
+    local("TT Norms Bold Italic"),
+    local("TTNorms-BoldItalic"),
+    url("TTNorms-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-BoldItalic.woff") format("woff"),
+    url("TTNorms-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Medium.eot");
+  src:
+    local("TT Norms Medium"),
+    local("TTNorms-Medium"),
+    url("TTNorms-Medium.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Medium.woff") format("woff"),
+    url("TTNorms-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-Black.eot");
+  src:
+    local("TT Norms Black"),
+    local("TTNorms-Black"),
+    url("TTNorms-Black.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-Black.woff") format("woff"),
+    url("TTNorms-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Medium";
+  src: url("TTNorms-MediumItalic.eot");
+  src:
+    local("TT Norms Medium Italic"),
+    local("TTNorms-MediumItalic"),
+    url("TTNorms-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-MediumItalic.woff") format("woff"),
+    url("TTNorms-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT Norms Heavy";
+  src: url("TTNorms-HeavyItalic.eot");
+  src:
+    local("TT Norms Heavy Italic"),
+    local("TTNorms-HeavyItalic"),
+    url("TTNorms-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-HeavyItalic.woff") format("woff"),
+    url("TTNorms-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("TTNorms-ExtraBold.eot");
+  src:
+    local("TT Norms ExtraBold"),
+    local("TTNorms-ExtraBold"),
+    url("TTNorms-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("TTNorms-ExtraBold.woff") format("woff"),
+    url("TTNorms-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}

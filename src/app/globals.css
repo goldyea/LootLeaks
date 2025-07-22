@@ -1,5 +1,5 @@
 /* Import TT Norms font family */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-feature-settings: none;
   font-variant-ligatures: none;
 }
@@ -191,6 +191,80 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Rainbow rotating tooltip animation */
+@keyframes rainbow-rotate {
+  0% {
+    border-color: #ff0000;
+    box-shadow:
+      0 0 10px #ff0000,
+      0 0 20px #ff0000,
+      0 0 30px #ff0000;
+    transform: rotate(0deg);
+  }
+  14.28% {
+    border-color: #ff8c00;
+    box-shadow:
+      0 0 10px #ff8c00,
+      0 0 20px #ff8c00,
+      0 0 30px #ff8c00;
+    transform: rotate(51.4deg);
+  }
+  28.57% {
+    border-color: #ffd700;
+    box-shadow:
+      0 0 10px #ffd700,
+      0 0 20px #ffd700,
+      0 0 30px #ffd700;
+    transform: rotate(102.8deg);
+  }
+  42.86% {
+    border-color: #32cd32;
+    box-shadow:
+      0 0 10px #32cd32,
+      0 0 20px #32cd32,
+      0 0 30px #32cd32;
+    transform: rotate(154.2deg);
+  }
+  57.14% {
+    border-color: #00bfff;
+    box-shadow:
+      0 0 10px #00bfff,
+      0 0 20px #00bfff,
+      0 0 30px #00bfff;
+    transform: rotate(205.6deg);
+  }
+  71.43% {
+    border-color: #4169e1;
+    box-shadow:
+      0 0 10px #4169e1,
+      0 0 20px #4169e1,
+      0 0 30px #4169e1;
+    transform: rotate(257deg);
+  }
+  85.71% {
+    border-color: #8a2be2;
+    box-shadow:
+      0 0 10px #8a2be2,
+      0 0 20px #8a2be2,
+      0 0 30px #8a2be2;
+    transform: rotate(308.4deg);
+  }
+  100% {
+    border-color: #ff0000;
+    box-shadow:
+      0 0 10px #ff0000,
+      0 0 20px #ff0000,
+      0 0 30px #ff0000;
+    transform: rotate(360deg);
+  }
+}
+
+.tooltip-glow {
+  position: relative;
+  border: 2px solid #ff0000;
+  animation: rainbow-rotate 3s linear infinite;
 }
 
 /* Mobile responsive adjustments */
