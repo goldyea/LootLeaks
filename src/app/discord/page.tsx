@@ -1,4 +1,5 @@
 import { createClient } from "../../../supabase/server";
+import { cookies } from "next/headers";
 import {
   MessageCircle,
   Users,
@@ -16,7 +17,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function DiscordPage() {
-  const supabase = createClient();
+  const supabase = createClient(cookies());
   const {
     data: { user },
   } = await supabase.auth.getUser();

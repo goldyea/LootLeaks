@@ -1,4 +1,5 @@
 import { createClient } from "../../../supabase/server";
+import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import {
   Upload,
@@ -28,7 +29,7 @@ import {
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function UploadPage() {
-  const supabase = createClient();
+  const supabase = createClient(cookies());
   const {
     data: { user },
   } = await supabase.auth.getUser();

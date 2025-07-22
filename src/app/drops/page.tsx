@@ -1,4 +1,5 @@
 import { createClient } from "../../../supabase/server";
+import { cookies } from "next/headers";
 import {
   Package,
   Download,
@@ -27,7 +28,7 @@ import {
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function DropsPage() {
-  const supabase = createClient();
+  const supabase = createClient(cookies());
   const {
     data: { user },
   } = await supabase.auth.getUser();

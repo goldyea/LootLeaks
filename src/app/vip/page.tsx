@@ -1,4 +1,5 @@
 import { createClient } from "../../../supabase/server";
+import { cookies } from "next/headers";
 import {
   Crown,
   Star,
@@ -17,7 +18,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function VIPPage() {
-  const supabase = await createClient();
+  const supabase = createClient(cookies());
   const {
     data: { user },
   } = await supabase.auth.getUser();

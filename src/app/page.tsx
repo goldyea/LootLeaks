@@ -1,4 +1,5 @@
 import { createClient } from "../../supabase/server";
+import { cookies } from "next/headers";
 import Link from "next/link";
 import {
   Home as HomeIcon,
@@ -30,7 +31,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function Home() {
-  const supabase = createClient();
+  const supabase = createClient(cookies());
   const {
     data: { user },
   } = await supabase.auth.getUser();
