@@ -4,7 +4,7 @@ import { createClient } from "../../../supabase/server";
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function Dashboard() {
-  const supabase = await createClient();
+  const supabase = createClient();
 
   const {
     data: { user },

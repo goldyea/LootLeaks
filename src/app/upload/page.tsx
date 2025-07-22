@@ -28,7 +28,7 @@ import {
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function UploadPage() {
-  const supabase = await createClient();
+  const supabase = createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
