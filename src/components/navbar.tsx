@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { createClient } from "../../supabase/server";
-import { cookies } from "next/headers";
+import { createClient } from "@/lib/supabase";
 import { Button } from "./ui/button";
 import { Bell, Coins, MessageCircle } from "lucide-react";
 import UserProfile from "./user-profile";
 
 export default async function Navbar() {
-  const supabase = createClient(cookies());
+  const supabase = createClient();
 
   const {
     data: { user },

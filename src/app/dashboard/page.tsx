@@ -1,11 +1,10 @@
 import { InfoIcon, UserCircle } from "lucide-react";
 import { redirect } from "next/navigation";
-import { createClient } from "../../../supabase/server";
-import { cookies } from "next/headers";
+import { createClient } from "@/lib/supabase";
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function Dashboard() {
-  const supabase = createClient(cookies());
+  const supabase = createClient();
 
   const {
     data: { user },
