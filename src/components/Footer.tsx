@@ -91,30 +91,6 @@ export function Footer() {
         {/* Divider */}
         <div className="w-full h-px bg-white/6 rounded-full mb-[35px]" />
 
-        {/* Crypto Icons */}
-        <div className="flex items-center justify-between mb-[35px]">
-          <CryptoIcon name="Bitcoin" color="#f7931a" />
-          <CryptoIcon name="Ethereum" color="#627eea" />
-          <CryptoIcon name="Tether" color="#26a17b" />
-          <CryptoIcon name="Tron" color="#ef0027" />
-          <CryptoIcon name="Ripple" color="#0596d4" />
-        </div>
-
-        {/* Divider */}
-        <div className="w-full h-px bg-white/6 rounded-full mb-[35px]" />
-
-        {/* Partners */}
-        <div className="flex items-center justify-around mb-[35px]">
-          <PartnerLogo name="CGF" />
-          <PartnerLogo name="AFA" />
-          <PartnerLogo name="UFC" />
-          <PartnerLogo name="XZ" />
-          <PartnerLogo name="RedBull" />
-        </div>
-
-        {/* Divider */}
-        <div className="w-full h-px bg-white/6 rounded-full mb-[35px]" />
-
         {/* Bottom Section */}
         <div className="flex flex-col items-center gap-6">
           <div className="w-10 h-10">
@@ -186,38 +162,6 @@ function FooterLink({ text }: FooterLinkProps) {
   return (
     <div className="font-bold text-base leading-[19px] text-[#6f7d9d] cursor-pointer transition-colors hover:text-white">
       {text}
-    </div>
-  );
-}
-
-interface CryptoIconProps {
-  name: string;
-  color: string;
-}
-
-function CryptoIcon({ name, color }: CryptoIconProps) {
-  return (
-    <div className="w-auto h-[30px] flex items-center justify-center">
-      <div
-        className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold"
-        style={{ backgroundColor: color }}
-      >
-        {name.slice(0, 2).toUpperCase()}
-      </div>
-    </div>
-  );
-}
-
-interface PartnerLogoProps {
-  name: string;
-}
-
-function PartnerLogo({ name }: PartnerLogoProps) {
-  return (
-    <div className="w-auto h-[50px] flex items-center justify-center">
-      <div className="h-12 px-4 bg-gray-700 rounded flex items-center justify-center text-white text-sm font-bold">
-        {name}
-      </div>
     </div>
   );
 }

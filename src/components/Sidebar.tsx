@@ -166,7 +166,7 @@ export function Sidebar({ isOpen, onToggle }: SidebarProps) {
 
                 {/* Tooltip */}
                 {!isOpen && hoveredTooltip === "RESOURCES" && (
-                  <div className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 z-50 px-3 py-2 bg-[#1a1f2e] border border-white/10 rounded-lg shadow-lg tooltip-glow">
+                  <div className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 z-50 px-3 py-2 bg-[#1a1f2e] border border-white/10 rounded-lg shadow-lg">
                     <div className="font-bold text-sm text-white whitespace-nowrap">
                       RESOURCES
                     </div>
@@ -348,7 +348,7 @@ function NavItem({
 
       {/* Tooltip */}
       {isCollapsed && hoveredTooltip === label && (
-        <div className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 z-50 px-3 py-2 bg-[#1a1f2e] border border-white/10 rounded-lg shadow-lg tooltip-glow">
+        <div className="absolute left-full ml-3 top-1/2 transform -translate-y-1/2 z-50 px-3 py-2 bg-[#1a1f2e] border border-white/10 rounded-lg shadow-lg">
           <div className="font-bold text-sm text-white whitespace-nowrap">
             {label}
           </div>

@@ -16,8 +16,8 @@ export function HomeContent() {
         {/* Top Rated Resources */}
         <TopRatedResources />
 
-        {/* Recent Popular Uploads */}
-        <RecentUploads />
+        {/* Recent Members */}
+        <RecentMembers />
 
         {/* Recent Activity */}
         <RecentActivity />
@@ -189,11 +189,20 @@ function GameSections() {
   return (
     <div className="flex gap-5 mb-11">
       <div className="w-full">
-        <div className="w-full aspect-[1280/440] bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl mb-3 hover-lift cursor-pointer">
-          <div className="w-full h-full rounded-2xl bg-black/20 flex items-center justify-center">
+        <div
+          className="relative w-full aspect-[1280/440] rounded-2xl mb-3 hover-lift cursor-pointer overflow-hidden"
+          style={{
+            backgroundImage: "url(/endplugin.png)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/50 rounded-2xl"></div>
+          <div className="relative z-10 w-full h-full rounded-2xl flex items-center justify-center">
             <div className="text-center text-white">
-              <div className="text-2xl mb-2">🔧</div>
-              <div className="font-bold">Premium Plugins</div>
+              <div className="text-2xl mb-2 drop-shadow-lg">🔧</div>
+              <div className="font-bold drop-shadow-md">Premium Plugins</div>
             </div>
           </div>
         </div>
@@ -209,11 +218,20 @@ function GameSections() {
       </div>
 
       <div className="w-full">
-        <div className="w-full aspect-[1280/440] bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl mb-3 hover-lift cursor-pointer">
-          <div className="w-full h-full rounded-2xl bg-black/20 flex items-center justify-center">
+        <div
+          className="relative w-full aspect-[1280/440] rounded-2xl mb-3 hover-lift cursor-pointer overflow-hidden"
+          style={{
+            backgroundImage: "url(/serversetup.png)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/50 rounded-2xl"></div>
+          <div className="relative z-10 w-full h-full rounded-2xl flex items-center justify-center">
             <div className="text-center text-white">
-              <div className="text-2xl mb-2">⚙️</div>
-              <div className="font-bold">Server Configs</div>
+              <div className="text-2xl mb-2 drop-shadow-lg">⚙️</div>
+              <div className="font-bold drop-shadow-md">Server Configs</div>
             </div>
           </div>
         </div>
@@ -291,52 +309,92 @@ function TopRatedResources() {
   );
 }
 
-function RecentUploads() {
-  const uploads = Array(20)
+function RecentMembers() {
+  const members = Array(20)
     .fill(null)
-    .map((_, i) => ({
-      resource: ["EssentialsX", "WorldGuard", "Vault", "LuckPerms", "Citizens"][
-        i % 5
-      ],
-      uploader: `User${i + 1}***`,
-      downloads: `${(Math.random() * 10 + 1).toFixed(1)}K`,
-      color: [
-        "from-green-500 to-blue-500",
-        "from-pink-500 to-purple-500",
-        "from-blue-500 to-purple-500",
-        "from-orange-500 to-red-500",
-        "from-green-500 to-emerald-500",
-      ][i % 5],
-    }));
+    .map((_, i) => {
+      const timeUnits = ["m", "h", "d", "w"];
+      const timeUnit = timeUnits[Math.floor(Math.random() * timeUnits.length)];
+      const timeValue = Math.floor(Math.random() * 59) + 1;
+
+      return {
+        username: `User${i + 1}${Math.random() > 0.5 ? "***" : ""}`,
+        joinedTime: `${timeValue}${timeUnit} ago`,
+        avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=user${i + 1}`,
+        gradientColor: [
+          "from-blue-500 to-purple-500",
+          "from-green-500 to-emerald-500",
+          "from-pink-500 to-purple-500",
+          "from-orange-500 to-red-500",
+          "from-cyan-500 to-blue-500",
+          "from-purple-500 to-pink-500",
+          "from-yellow-500 to-orange-500",
+          "from-indigo-500 to-purple-500",
+        ][i % 8],
+      };
+    });
 
   return (
     <div className="mb-11">
       <div className="flex justify-between items-center mb-6">
         <span className="font-extrabold text-xl leading-6 text-white">
-          Recent Popular Uploads
+          Recent Members
         </span>
       </div>
 
-      <div className="w-full bg-[#0d1426] rounded-[18px] p-5 overflow-hidden">
-        <div className="flex gap-3 animate-scroll">
-          {[...uploads, ...uploads].map((upload, index) => (
+      <div className="w-full bg-[#0d1426] rounded-[18px] p-6 overflow-hidden">
+        <div className="flex gap-6 animate-scroll-continuous">
+          {[...members, ...members, ...members].map((member, index) => (
             <div
               key={index}
-              className="flex flex-col cursor-pointer hover:opacity-80 transition-opacity"
+              className="group flex items-center gap-4 min-w-[280px] bg-[#111a33]/50 hover:bg-[#111a33]/80 rounded-xl p-4 cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-lg border border-white/5 hover:border-white/10"
             >
+              {/* Avatar */}
               <div
-                className={`w-20 h-25 bg-gradient-to-br ${upload.color} rounded-lg mb-2`}
+                className={`relative w-12 h-12 rounded-full bg-gradient-to-br ${member.gradientColor} p-0.5 transition-transform duration-300 group-hover:scale-110`}
               >
-                <div className="w-full h-full rounded-lg bg-black/20 flex items-center justify-center text-white text-xs font-bold">
-                  {upload.resource}
+                <div className="w-full h-full rounded-full bg-[#0d1426] flex items-center justify-center overflow-hidden">
+                  <img
+                    src={member.avatar}
+                    alt={member.username}
+                    className="w-10 h-10 rounded-full"
+                  />
                 </div>
               </div>
-              <div className="font-bold text-xs leading-[14px] text-white mt-2 flex items-center">
-                <div className="w-3.5 h-3.5 bg-gradient-to-br from-amber-400 to-amber-600 rounded mr-1" />
-                {upload.uploader}
+
+              {/* Member Info */}
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-bold text-sm text-white group-hover:text-blue-300 transition-colors truncate">
+                    @{member.username}
+                  </span>
+                </div>
+                <div className="font-medium text-xs text-[#6f7d9d] group-hover:text-[#8a9bb8] transition-colors">
+                  Joined {member.joinedTime}
+                </div>
               </div>
-              <div className="font-bold text-xs leading-[14px] text-[#23b260] mt-1">
-                {upload.downloads} DL
+
+              {/* View Profile Link */}
+              <div className="flex items-center gap-1 text-[#4383ff] hover:text-[#6366f1] transition-colors opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                <span className="font-semibold text-xs whitespace-nowrap">
+                  View Profile
+                </span>
+                <svg
+                  width="4"
+                  height="8"
+                  viewBox="0 0 4 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="transition-transform duration-300 group-hover:translate-x-0.5"
+                >
+                  <path
+                    d="M0.5 0.5L3.5 4L0.5 7.5"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </div>
             </div>
           ))}
