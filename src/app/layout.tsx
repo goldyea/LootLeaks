@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import { GeistSans } from "@vercel/geist/font/sans";
-import { GeistMono } from "@vercel/geist/font/mono";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import Script from "next/script";
@@ -16,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+    <html lang="en">
       <head>
         <Script
           crossOrigin="anonymous"
