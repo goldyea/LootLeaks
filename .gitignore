@@ -41,4 +41,3 @@ next-env.d.ts
 node_modules
 **/tempobook/dynamic/
 **/tempobook/storyboards/
-.env
