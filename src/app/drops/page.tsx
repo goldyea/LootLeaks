@@ -1,4 +1,4 @@
-import { createClient } from "../../../supabase/server";
+// import { createClient } from "../../../supabase/server";
 import {
   Package,
   Download,
@@ -27,10 +27,10 @@ import {
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function DropsPage() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  // const supabase = await createClient();
+  // const {
+  //   data: { user },
+  // } = await supabase.auth.getUser();
 
   const resources = [
     {
@@ -151,7 +151,7 @@ export default async function DropsPage() {
 
   return (
     <MainLayout
-      user={user}
+      user={null}
       title="Resource Drops"
       subtitle={`Discover ${resources.length} amazing resources`}
     >

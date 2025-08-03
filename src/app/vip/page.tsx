@@ -1,4 +1,4 @@
-import { createClient } from "../../supabase/server";
+// import { createClient } from "../../supabase/server";
 import {
   Crown,
   Star,
@@ -17,14 +17,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function VIPPage() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  // const supabase = await createClient();
+  // const {
+  //   data: { user },
+  // } = await supabase.auth.getUser();
 
   return (
     <MainLayout
-      user={user}
+      user={null}
       showSearch={false}
       title="VIP Membership"
       subtitle="Unlock premium features and exclusive content"

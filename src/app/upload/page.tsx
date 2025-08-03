@@ -1,5 +1,5 @@
-import { createClient } from "../../supabase/server";
-import { redirect } from "next/navigation";
+// import { createClient } from "../../supabase/server";
+// import { redirect } from "next/navigation";
 import {
   Upload,
   FileText,
@@ -28,18 +28,18 @@ import {
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function UploadPage() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  // const supabase = await createClient();
+  // const {
+  //   data: { user },
+  // } = await supabase.auth.getUser();
 
-  if (!user) {
-    return redirect("/sign-in");
-  }
+  // if (!user) {
+  //   return redirect("/sign-in");
+  // }
 
   return (
     <MainLayout
-      user={user}
+      user={null}
       showSearch={false}
       title="Upload Resource"
       subtitle="Share your creation with the community"

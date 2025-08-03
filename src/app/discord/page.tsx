@@ -1,4 +1,4 @@
-import { createClient } from "../../supabase/server";
+// import { createClient } from "../../supabase/server";
 import {
   MessageCircle,
   Users,
@@ -16,14 +16,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function DiscordPage() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  // const supabase = await createClient();
+  // const {
+  //   data: { user },
+  // } = await supabase.auth.getUser();
 
   return (
     <MainLayout
-      user={user}
+      user={null}
       showSearch={false}
       title="Discord Community"
       subtitle="Join our thriving community of Minecraft enthusiasts"
