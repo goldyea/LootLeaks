@@ -1,6 +1,6 @@
 import { InfoIcon, UserCircle } from "lucide-react";
 import { redirect } from "next/navigation";
-import { createClient } from "../../../supabase/server";
+import { createClient } from "../../supabase/server";
 import MainLayout from "@/components/layout/main-layout";
 
 export default async function Dashboard() {
